@@ -79,25 +79,12 @@ namespace TelCo.ColorCoder
         {
             // Find the major color in the array and get the index
             int majorIndex = -1;
-            for (int i = 0; i < colorMapMajor.Length; i++)
-            {
-                if (colorMapMajor[i] == pair.majorColor)
-                {
-                    majorIndex = i;
-                    break;
-                }
-            }
-
+            majorIndex = Array.IndexOf(colorMapMajor, pair.majorIndex);
+            
             // Find the minor color in the array and get the index
             int minorIndex = -1;
-            for (int i = 0; i < colorMapMinor.Length; i++)
-            {
-                if (colorMapMinor[i] == pair.minorColor)
-                {
-                    minorIndex = i;
-                    break;
-                }
-            }
+            minorIndex = Array.IndexOf(colorMapMinor, pair.minorColor);
+            
             // If colors can not be found throw an exception
             if (majorIndex == -1 || minorIndex == -1)
             {
