@@ -4,5 +4,8 @@ using System.Drawing;
 
 namespace TelCo.ColorCoder
 {
-
+  partial class Program
+  {
+    
+  }
 }
