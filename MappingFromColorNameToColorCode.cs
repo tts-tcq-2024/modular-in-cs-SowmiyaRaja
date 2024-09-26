@@ -6,6 +6,9 @@ namespace TelCo.ColorCoder
 {
   partial class Program
   {
+    /// <summary>
+    /// Print the mapping between color-names to the corresponding numbers.
+    /// </summary>
     private static void MappingFromColorNameToColorCode()
     {
       int colorCode = 1;
