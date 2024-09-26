@@ -14,7 +14,8 @@ namespace TelCo.ColorCoder
       {
         foreach(var minorColor in colorMapMinor)
         {
-          
+          Console.WriteLine(String.Format("|{0}\t|{1}\t|{2}|", majorColor, minorColor, colorCode));
+          colorCode++;
         }
       }
     }
