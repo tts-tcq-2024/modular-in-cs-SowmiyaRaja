@@ -51,11 +51,11 @@ namespace TelCo.ColorCoder
         {
             // Find the major color in the array and get the index
             int majorIndex = -1;
-            majorIndex = Array.IndexOf(Program.colorMapMajor, pair.majorIndex);
+            majorIndex = Array.IndexOf(colorMapMajor, pair.majorColor);
             
             // Find the minor color in the array and get the index
             int minorIndex = -1;
-            minorIndex = Array.IndexOf(Program.colorMapMinor, pair.minorColor);
+            minorIndex = Array.IndexOf(colorMapMinor, pair.minorColor);
             
             // If colors can not be found throw an exception
             if (majorIndex == -1 || minorIndex == -1)
