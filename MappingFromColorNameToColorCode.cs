@@ -10,12 +10,12 @@ namespace TelCo.ColorCoder
     {
       int colorCode = 1;
       Console.WriteLine("________________________________________");
-      Console.WriteLine(String.Format("|{0}\t\t|{1}\t\t|{2}|", "Major Color", "Minor Color", "Pair No"));
+      Console.WriteLine(String.Format("|{0}\t|{1}\t|{2}|", "Major Color", "Minor Color", "Pair No"));
       foreach(var majorColor in colorMapMajor)
       {
         foreach(var minorColor in colorMapMinor)
         {
-          Console.WriteLine(String.Format("|{0}\t|{1}\t|{2}|", majorColor.Name, minorColor.Name, colorCode));
+          Console.WriteLine(String.Format("|{0}\t\t|{1}\t\t|{2}|", majorColor.Name, minorColor.Name, colorCode));
           colorCode++;
         }
       }
