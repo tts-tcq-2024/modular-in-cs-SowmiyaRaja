@@ -8,7 +8,15 @@ namespace TelCo.ColorCoder
   {
     private static void MappingFromColorNameToColorCode()
     {
-      
+      int colorCode = 1;
+      Console.WriteLine(String.Format("|{0}\t|{1}\t|{2}|", "Major Color", "Minor Color", "Pair No"));
+      foreach(var majorColor in colorMapMajor)
+      {
+        foreach(var minorColor in colorMapMinor)
+        {
+          
+        }
+      }
     }
   }
 }
