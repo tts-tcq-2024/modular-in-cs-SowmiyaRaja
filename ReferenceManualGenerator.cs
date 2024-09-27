@@ -9,17 +9,19 @@ namespace TelCo.ColorCoder
     /// <summary>
     /// Print the mapping between color-names to the corresponding numbers.
     /// </summary>
-    private static void MappingFromColorNameToColorCode()
+    private static void ReferenceManualGenerator()
     {
       int colorCode = 1;
-      Console.WriteLine("________________________________________");
-      Console.WriteLine(String.Format("|{0}\t|{1}\t|{2}|", "Major Color", "Minor Color", "Pair No"));
+      string manual = "________________________________________\n";
+      manual += String.Format("|{0}\t|{1}\t|{2}|", "Major Color", "Minor Color", "Pair No");
+      Console.WriteLine();
       foreach(var majorColor in colorMapMajor)
       {
         foreach(var minorColor in colorMapMinor)
         {
-          Console.WriteLine(String.Format("|{0}\t\t|{1}\t\t|{2}|", majorColor.Name, minorColor.Name, colorCode));
+          manual += String.Format("|{0}\t\t|{1}\t\t|{2}|", majorColor.Name, minorColor.Name, colorCode);
           colorCode++;
+          Console.WriteLine(manual);
         }
       }
     }
