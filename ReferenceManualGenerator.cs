@@ -23,7 +23,6 @@ namespace TelCo.ColorCoder
           colorCode++;
         }
       }
-     Console.WriteLine(manual);
      return manual; 
     }
   }
