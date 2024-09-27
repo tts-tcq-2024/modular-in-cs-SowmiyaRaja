@@ -12,14 +12,14 @@ namespace TelCo.ColorCoder
     private static string ReferenceManualGenerator()
     {
       int colorCode = 1;
-      string manual = "________________________________________\n";
-      manual += String.Format("|{0}\t|{1}\t|{2}|", "Major Color", "Minor Color", "Pair No");
+      string manual = "_________________________________________\n";
+      manual += String.Format("|{0}\t|{1}\t|{2}|\n", "Major Color", "Minor Color", "Pair No");
       Console.WriteLine();
       foreach(var majorColor in colorMapMajor)
       {
         foreach(var minorColor in colorMapMinor)
         {
-          manual += String.Format("|{0}\t\t|{1}\t\t|{2}|", majorColor.Name, minorColor.Name, colorCode);
+          manual += String.Format("|{0}\t\t|{1}\t\t|{2}|\n", majorColor.Name, minorColor.Name, colorCode);
           colorCode++;
         }
       }
