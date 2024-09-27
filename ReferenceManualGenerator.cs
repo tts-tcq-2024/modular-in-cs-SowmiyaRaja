@@ -9,7 +9,7 @@ namespace TelCo.ColorCoder
     /// <summary>
     /// Print the mapping between color-names to the corresponding numbers.
     /// </summary>
-    private static void ReferenceManualGenerator()
+    private static string ReferenceManualGenerator()
     {
       int colorCode = 1;
       string manual = "________________________________________\n";
@@ -21,9 +21,10 @@ namespace TelCo.ColorCoder
         {
           manual += String.Format("|{0}\t\t|{1}\t\t|{2}|", majorColor.Name, minorColor.Name, colorCode);
           colorCode++;
-          Console.WriteLine(manual);
         }
       }
+     Console.WriteLine(manual);
+     return manual; 
     }
   }
 }
